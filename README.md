@@ -27,10 +27,10 @@ API : [graphql](https://graphql.org/)
 Install my-project with npm
 
 ```bash
-  git clone url........
+  git clone https://github.com/ShamimMahmud25/video-management-system
   cd video-management-system
   cd server
-  npm Install
+  npm install
 ```
 
 ## Environment Variables for Server
@@ -57,7 +57,7 @@ Installation with npm
 ```bash
 
   cd client
-  npm Install
+  npm install
   
 ```
 
