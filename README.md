@@ -68,7 +68,7 @@ To run  with npm
 ```bash
   npm run dev
 ```
-
+Click top of the card of the video for edit and delete options.
 For video urls you can use this repository
 https://gist.github.com/deepakpk009/99fd994da714996b296f11c3c371d5ee
 ## Running Tests
