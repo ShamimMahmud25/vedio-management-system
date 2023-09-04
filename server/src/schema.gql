@@ -1,0 +1,65 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateVideoInput {
+  """Video Description"""
+  description: String!
+
+  """Video Title"""
+  title: String!
+
+  """Video url"""
+  url: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Mutation {
+  createVideo(createVideoInput: CreateVideoInput!): Video!
+  deleteVideo(id: String!): Video!
+  updateVideo(updateVideoInput: UpdateVideoInput!): Video!
+}
+
+type Query {
+  FindOne(id: String!): Video!
+  video: [Video!]!
+}
+
+input UpdateVideoInput {
+  _id: String!
+
+  """Video Description"""
+  description: String!
+
+  """Video Title"""
+  title: String!
+
+  """Video url"""
+  url: String!
+}
+
+type Video {
+  _id: String!
+
+  """Video creation date"""
+  createdAt: DateTime
+
+  """Video Description"""
+  description: String
+
+  """Video Title"""
+  title: String
+
+  """Video updation date"""
+  updatedAt: DateTime
+
+  """Video url"""
+  url: String!
+
+  """Video ID"""
+  videoID: String
+}
